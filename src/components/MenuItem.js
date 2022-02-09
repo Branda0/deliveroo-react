@@ -1,7 +1,30 @@
-const MenuItem = ({ data }) => {
+import { useState } from "react";
+
+const MenuItem = ({ data, basket, setBasket }) => {
+  const [isShadow, setIsShadow] = useState(false);
+
+  const addToBasket = () => {
+    const newBasket = [...basket];
+
+    const index = newBasket.findIndex((item) => item.id === data.id);
+
+    if (index === -1) {
+      newBasket.push({ id: data.id, title: data.title, price: Number(data.price), quantity: 1 });
+    } else {
+      newBasket[index].quantity = basket[index].quantity + 1;
+    }
+
+    setBasket(newBasket);
+  };
+
   return (
     <div className="item-container">
-      <div className="item">
+      <div
+        className={`item ${isShadow && "shadow"} `}
+        onMouseEnter={() => setIsShadow(true)}
+        onMouseLeave={() => setIsShadow(false)}
+        onClick={addToBasket}
+      >
         <div className="item-text">
           <h3 className="item-title">{data.title}</h3>
           <p className="item-description">{data.description}</p>

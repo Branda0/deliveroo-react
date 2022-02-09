@@ -10,8 +10,6 @@
   font-weight: 400;
   max-width: 1200px;
   margin: 0 auto;
-
-  /* background-color: beige; */
 }
 
 h1 {
@@ -84,14 +82,112 @@ h3 {
   margin-right: 30px;
 }
 
+/* BASKET */
+
+.empty-basket {
+  padding: 50px 0px;
+  text-align: center;
+  color: #868a8a;
+  font-weight: 300;
+}
+
 .basket-container {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 5px;
   width: 350px;
-  height: 300px;
+  height: 100%;
   margin-top: 30px;
   position: sticky;
   top: 30px;
+  padding: 10px;
+}
+
+.top-basket-btn {
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #02cdbd;
+  border-radius: 5px;
+  color: white;
+}
+
+.bot {
+  display: none;
+}
+
+.bot-basket-btn {
+  display: none;
+}
+.bot-basket-close-btn-container {
+  display: none;
+}
+
+.isEmpty {
+  background-color: #bac3c3;
+  color: #8b9a9b;
+}
+
+.basket-item-container {
+  display: flex;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+
+.item-price {
+  white-space: nowrap;
+}
+.item-counter {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.item-counter span {
+  margin: 0 5px;
+}
+
+.item-counter img {
+  width: 20px;
+  cursor: pointer;
+}
+.item-infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.costs > div,
+.total > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.costs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80px;
+  border-bottom: 1px solid #d1d7d7;
+  border-top: 1px solid #d1d7d7;
+}
+
+.costs span {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 0 10px;
 }
 
 /* MENU */
@@ -123,10 +219,15 @@ h3 {
   padding: 15px;
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .item-text {
   margin-right: 20px;
+}
+
+.shadow {
+  box-shadow: 0px 14px 30px 0px #ccc;
 }
 
 .item-description {
