@@ -53,7 +53,7 @@ const Basket = ({ basket, setBasket }) => {
               : () => {}
           }
         >
-          {!isEmpty && (
+          {!isEmpty && !bottomBasket && (
             <div className="bot-counter-container">
               <span className="bot-counter">{itemsQuantity}</span>
             </div>
@@ -61,7 +61,7 @@ const Basket = ({ basket, setBasket }) => {
           <span className="bot-text">
             {bottomBasket ? (isEmpty ? "Voir le panier" : "Valider le panier") : "Voir le panier"}
           </span>
-          {!isEmpty && (
+          {!isEmpty && !bottomBasket && (
             <span className="bot-total">{(pricing.subTotal + pricing.delivery).toFixed(2)} €</span>
           )}
         </div>
