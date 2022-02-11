@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 const Basket = ({ basket, setBasket }) => {
-  const isEmpty = basket.length === 0;
   const [bottomBasket, setBottomBasket] = useState(false);
+  const isEmpty = basket.length === 0;
   let subTotal = 0;
   let itemsQuantity = 0;
   basket.forEach((element) => {
@@ -45,13 +45,8 @@ const Basket = ({ basket, setBasket }) => {
       <div className="bottom-btn-new">
         <div
           className={`bot-basket-btn ${isEmpty && "isEmpty center"}`}
-          onClick={
-            !isEmpty
-              ? () => {
-                  setBottomBasket(true);
-                }
-              : () => {}
-          }
+          // onClick={!isEmpty ? () => setBottomBasket(true) : () => {}}
+          onClick={() => !isEmpty && setBottomBasket(true)}
         >
           {!isEmpty && !bottomBasket && (
             <div className="bot-counter-container">
