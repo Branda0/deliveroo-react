@@ -40,6 +40,7 @@ h3 {
 }
 
 .header .container {
+  /* background-color: blue; */
   display: flex;
   height: 100%;
   align-items: center;
@@ -211,7 +212,7 @@ h3 {
   padding: 10px;
 }
 
-.item {
+.item-menu {
   display: flex;
   justify-content: space-between;
   height: 160px;
@@ -222,12 +223,12 @@ h3 {
   cursor: pointer;
 }
 
-.item-text {
-  margin-right: 20px;
+.item-menu:hover {
+  box-shadow: 0px 14px 30px 0px #ccc;
 }
 
-.shadow {
-  box-shadow: 0px 14px 30px 0px #ccc;
+.item-text {
+  margin-right: 20px;
 }
 
 .item-description {

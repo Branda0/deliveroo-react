@@ -19,12 +19,7 @@ const MenuItem = ({ data, basket, setBasket }) => {
 
   return (
     <div className="item-container">
-      <div
-        className={`item ${isShadow && "shadow"} `}
-        onMouseEnter={() => setIsShadow(true)}
-        onMouseLeave={() => setIsShadow(false)}
-        onClick={addToBasket}
-      >
+      <div className="item-menu" onClick={addToBasket}>
         <div className="item-text">
           <h3 className="item-title">{data.title}</h3>
           <p className="item-description">{data.description}</p>
