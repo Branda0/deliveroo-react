@@ -46,10 +46,6 @@ h3 {
   align-items: center;
 }
 
-.storeheader {
-  /* background-color: yellow; */
-}
-
 .storeheader .container {
   padding: 30px 0 30px 0;
   display: flex;

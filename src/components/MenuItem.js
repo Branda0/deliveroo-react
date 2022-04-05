@@ -1,8 +1,6 @@
 import { useState } from "react";
 
 const MenuItem = ({ data, basket, setBasket }) => {
-  const [isShadow, setIsShadow] = useState(false);
-
   const addToBasket = () => {
     const newBasket = [...basket];
 
