@@ -1,6 +1,6 @@
 # Deliveroo React
 
-Single deliveroo page clone of _Le Pain Quotidien_ restaurant with shopping cart interactivity
+Single deliveroo clone page of _Le Pain Quotidien_ restaurant with shopping cart interactivity
 
 <img align="left" src="/src/assets/readme/mobile.png" alt="mobile-screenshot" width="20%" />
 <img  src="/src/assets/readme/laptop.png" alt="laptop-screenshot-1"  width="70%" />
@@ -14,7 +14,7 @@ Single deliveroo page clone of _Le Pain Quotidien_ restaurant with shopping cart
 ## Features
 
 - useEffect hook for fetching restaurant data
-- useState hook for cart state management (adding/removing items, modifyng quantity
+- useState hook for cart state management (adding / removing items, modifying quantity)
 - fully responsive
 
 ---
