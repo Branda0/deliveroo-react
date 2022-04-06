@@ -2,8 +2,8 @@
 
 Single deliveroo clone page of _Le Pain Quotidien_ restaurant with shopping cart interactivity
 
-<img align="left" src="/src/assets/readme/mobile.png" alt="mobile-screenshot" width="20%" />
-<img  src="/src/assets/readme/laptop.png" alt="laptop-screenshot-1"  width="70%" />
+<img align="left" src="src/assets/readme/mobile.png" alt="mobile-screenshot" width="20%" />
+<img  src="src/assets/readme/laptop.png" alt="laptop-screenshot-1"  width="70%" />
 
 ## Stack
 
