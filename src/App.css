@@ -66,6 +66,11 @@ h3 {
   }
 }
 
+.header {
+  height: 60px;
+  border-bottom: 1px solid #e9ebeb;
+}
+
 .header .container {
   display: flex;
   height: 100%;
