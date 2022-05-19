@@ -11,6 +11,7 @@ import Basket from "./components/Basket";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Loader from "./components/Loader";
 
 library.add(faXmark);
 
@@ -28,8 +29,8 @@ function App() {
 
     fetchData();
   }, []);
-  return isLoading ? (
-    <div>En cours de chargement...</div>
+  return !isLoading ? (
+    <Loader />
   ) : (
     <div>
       <Header />
