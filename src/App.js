@@ -29,7 +29,7 @@ function App() {
 
     fetchData();
   }, []);
-  return !isLoading ? (
+  return isLoading ? (
     <Loader />
   ) : (
     <div>
