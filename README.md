@@ -23,6 +23,6 @@ Single deliveroo clone page of _Le Pain Quotidien_ restaurant with shopping cart
 
 > https://deliveroo-brandao.netlify.app/
 
-#### Back-end (Deployed on Heroku)
+#### Back-end (Deployed on Railway)
 
 > repository ➡️ https://github.com/Branda0/deliveroo-backend
