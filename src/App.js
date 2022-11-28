@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("https://brandao-deliveroo.herokuapp.com/");
+      const response = await axios.get("https://deliveroo-backend.up.railway.app");
       setData(response.data);
       setIsLoading(false);
     };
